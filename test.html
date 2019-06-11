@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/5.2.0/mocha.min.css" />
+  <style>
+    #app {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <p><b>Shopping List</b></p>
+    <ul>
+      <li><a class="add-to-cart" href="#" data-name="Apple" data-price="1.22">Apple $1.22</a></li>
+      <li><a class="add-to-cart" href="#" data-name="Grapes" data-price="1.11">Grapes $1.11</a></li>
+      <li><a class="add-to-cart" href="#" data-name="Kiwi" data-price="2.29">Kiwi $2.29</a></li>
+      <li><a class="add-to-cart" href="#" data-name="Strawberries" data-price="4.44">Strawberries $4.44</a></li>
+      <li><a class="add-to-cart" href="#" data-name="Apple" data-price="1.22">Apple $1.22</a></li>
+      <li><a class="add-to-cart" href="#" data-name="Banana" data-price="1.33">Banana $1.33</a></li>
+      <li><a class="add-to-cart" href="#" data-name="Shoe" data-price="22.33">Shoe $22.33</a></li>
+      <li><a class="add-to-cart" href="#" data-name="Gloves" data-price="12.33">Gloves $12.33</a></li>
+      <li><a class="add-to-cart" href="#" data-name="Socks" data-price="2.33">Socks $2.33</a></li>
+      <li><a class="add-to-cart" href="#" data-name="Umbrella" data-price="10.44">Umbrella $10.44</a></li>
+      <li><a class="add-to-cart" href="#" data-name="Frisbee" data-price="5.22">Frisbee $5.22</a></li>
+        
+    </ul>
+</div>
+
+  <div id="mocha"></div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="assets/javascript/index.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/5.2.0/mocha.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.1.2/chai.min.js"></script>
+  <script>
+    mocha.ui('bdd');
+    mocha.reporter('html');
+    const expect = chai.expect;
+  </script>
+  <script src="test.js"></script>
+  <script>
+    mocha.run();
+  </script>
+</body>
+
+</html>
